@@ -31,3 +31,16 @@ kubectl proxy
 ```
 
 Dashboard is available at http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+
+## Deploy app-example
+
+```sh
+kubectl apply -f app-example
+```
+
+```sh
+kubectl port-forward service/foo-service 5678
+```
+
+Application is available at localhost:5678
